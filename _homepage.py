@@ -13,22 +13,6 @@
 "App Select"
 """
 
-import sys
-
-#? Get all my file paths!
-file_path1 = r"/Users/bencunningham/Documents/GitHub/Pang_Cun_P2/Cun's projects"
-file_path2 = r"/Users/bencunningham/Documents/GitHub/Pang_Cun_P2/Pang's projects"
-
-"""
-# Trying relative paths..
-file_path1 = r"/GitHub/Pang_Cun_P2/Cun's projects"
-file_path2 = r"/GitHub/Pang_Cun_P2/Pang's projects"
-"""
- 
-
-#? Upload all filepaths...
-sys.path.append(file_path1)
-sys.path.append(file_path2)
 
 
 #? Import all files
@@ -36,6 +20,10 @@ import password_generator
 import ATM                
 import currency_converter 
 import quiz
+# import calculator
+# import madlib
+# import numGuess
+
 
 
 def print_home_menu():
@@ -46,7 +34,7 @@ Please select the number of which app you would like to use!
     - (2) ATM
     - (3) NBA themed quizgame
     - (4) Currency Coverter
-    - (5) Madlib
+    - (5) MadLib
     - (6) Calculator
     - (7) Number Guessing Game
         
@@ -81,7 +69,6 @@ def main_main():
         elif user_input == 1:
             password_generator.main()
             
-
         elif user_input == 2:
             ATM.main()
 
@@ -94,19 +81,12 @@ def main_main():
         elif user_input == 5:
             # madlib.main()
             pass
-
         elif user_input == 6:
             # calculator.main()
             pass
-
         elif user_input == 7:
             # numGuess.main()
             pass
-
-        elif user_input == 8:
-            # weatherApp.main()
-            pass
-
         else:
             print(f"Sorry {user_input} is not a valid choice. Please try again!")
 
